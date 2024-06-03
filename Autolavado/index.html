@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body id="home">
+  <header class="header" id="inicio">
+    <nav class="menu-navegacion">
+        <div class="logo" data-aos="zoom-in-up">
+            <img src="img/LOGO1.jpeg" alt="Logo" width="100" height="auto">
+        </div>
+        <div class="search-container">
+          <form id="searchForm" action="/buscar" method="GET">
+              <input type="text" name="query" id="searchInput" placeholder="Buscar..." class="search-input">
+              <button type="submit" class="boton-busq">Buscar</button>
+          </form>
+      </div>
+        <button id="abrir" class="abrir-menu"><i class='bx bx-menu'></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class='bx bx-x'></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#servicio">Nosotros</a></li>
+                <li><a href="#galeria">Paquetes</a></li>
+                <li><a href="#encuentranos">Encuéntranos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="IniciarSesio.html">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="header-container">
+        <h1 class="header-title">Autolavado DiamondWash</h1>
+        <h2 class="header-subtitle">"Tu auto merece el mejor brillo, nosotros se lo damos."</h2>
+    </div>
+</header>
+    <main>
+        <section class="services-contenedor" id="servicio">
+            <h2 class="subtitulo">Nosotros</h2>
+            <div class="contenedor-servicio" data-aos="zoom-in-up">
+                <img src="img/retratoDaniel.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">.</span>Historia de Daniel</h3>
+                        <p>Nuestros Humildes Comienzos </p>
+                           <p>En los primeros años, en la bulliciosa ciudad de Nezahualcoyotl,
+                            surgió una idea DiamondWash que cambiaría el paisaje automotriz local.
+                            Daniel, un joven emprendedor con una pasión ardiente
+                            por los automóviles, decidió convertir su sueño en realidad. 
+                            Con determinación y entusiasmo, fundó "Autolavado DiamondWash",
+                            un lugar donde el cuidado automotriz se convertiría en arte. </p>
+                            <p>Durante estos años, el equipo de Autolavado DiamondWash se esforzó
+                            por ofrecer un servicio excepcional, ganándose la confianza y el aprecio 
+                            de los conductores de la ciudad.</p>
+                            <p>Marzo 2011 </p>
+                            <p>Con el tiempo, la reputación del Autolavado DiamondWash se expandió más allá de
+                            Av.Chimalhuacan. En marzo de 2011, nació oficialmente "Autolavado DiamondWash:
+                             con una visión renovada y un compromiso aún mayor con la excelencia. Rapidamente 
+                             se convirtió en un referente en el sector, brindando servicios de calidad y 
+                             estableciendo relaciones sólidas con la comunidad automotriz.</p>
+                            <p>Diciembre 2015</p>
+                        <p>Expansión Fase Dos El crecimiento continuo y la pasión por ofrecer lo mejor llevaron 
+                            a Autolavado DiamondWash a su fase dos de expansión en Mayo de 2024. Con nuevas tecnologías 
+                            innovadoras y un equipo aún más capacitado, el Autolavado DiamondWash reafirmó su compromiso 
+                            pde brindar un servicio excepcional y mantener los automóviles de
+                            sus clientes relucientes y como nuevos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+              <h2 class="subtitulo">PAQUETES</h2>
+              <div class="contenedor-galeria" data-aos="zoom-in-up">
+                <div class="item-galeria">
+                  <img src="img/servicios-integrales-autolavado-entenza.jpg" alt="Nombre del Producto 1" class="img-galeria image">
+                  <p class="nombre-producto">Lavado interior</p>
+                  <p class="precio-producto">$120.00</p>
+                  <a href="#" class="open-modal" data-modal="LavadoIn-modal"><h6>Leer Mas</h6></a>
+                </div>
+                <div class="item-galeria">
+                  <img src="img/como-lavar-el-coche-a-mano-en-casa-1280x720x80xX.jpg" alt="Nombre del Producto 2" class="img-galeria image">
+                  <p class="nombre-producto">Lavado  exterior </p>
+                  <p class="precio-producto">$80.00</p>
+                  <a href="#" class="open-modal" data-modal="LavasoEx-modal">Leer más</a>
+                </div>
+                <div class="item-galeria">
+                  <img src="img/23-como-limpiar-el-motor-del-coche-sin-dañarlo.jpg" alt="Nombre del Producto 3" class="img-galeria image">
+                  <p class="nombre-producto">Lavado de motor</p>
+                  <p class="precio-producto">$200.00</p>
+                  <a href="#" class="open-modal" data-modal="LavadoMot-modal">Leer más</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="gallery" id="galeria-productos">
+            <div class="contenedor">
+              <h2 class="subtitulo">Productos</h2>
+              <div class="contenedor-galeria" data-aos="zoom-in-up">
+                <div class="item-galeria">
+                  <img src="img/Producto1.jpg.avif" alt="Nombre del Producto 1" class="img-galeria image">
+                  <p class="nombre-producto">Almorol</p>
+                  <p class="precio-producto"> $30.00</p>
+                  <a href="#" class="open-modal" data-modal="Almorol-modal">Leer más</a>
+                </div>
+                <div class="item-galeria">
+                  <img src="img/Producto2.jpg" alt="Nombre del Producto 4" class="img-galeria image">
+                  <p class="nombre-producto">Kit Limpieza</p>
+                  <p class="precio-producto">$40.00</p>
+                  <a href="#" class="open-modal" data-modal="kitli-modal">Leer más</a>
+                </div>
+                <div class="item-galeria">
+                  <img src="img/Producto3.jpeg.webp" alt="Nombre del Producto 5" class="img-galeria image">
+                  <p class="nombre-producto">Shampoo con Esponja</p>
+                  <p class="precio-producto">$50.00</p>
+                  <a href="#" class="open-modal" data-modal="Shampoo">Leer más</a>
+                </div>
+                <div class="item-galeria">
+                  <img src="img/Producto4.jpeg.webp" alt="Nombre del Producto 6" class="img-galeria image">
+                  <p class="nombre-producto">Franela </p>
+                  <p class="precio-producto">$60.00</p>
+                  <a href="#" class="open-modal" data-modal="Franela">Leer más</a>
+                </div>
+                <div class="item-galeria">
+                  <img src="img/Producto5.jpeg.webp" alt="Nombre del Producto 2" class="img-galeria image">
+                  <p class="nombre-producto">Esponja Para Limpieza</p>
+                  <p class="precio-producto">$20.00</p>
+                  <a href="#" class="open-modal" data-modal="Esponja-modal">Leer más</a>
+                </div>
+                <div class="item-galeria">
+                  <img src="img/Producto6.jpeg.webp" alt="Nombre del Producto 3" class="img-galeria image">
+                  <p class="nombre-producto">CAR MAGIC FOAM CLEANER</p>
+                  <p class="precio-producto">$30.00</p>
+                  <a href="#" class="open-modal" data-modal="car-modal">Leer más</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div id="LavadoIn-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-img-container">
+                    <img src="img/servicios-integrales-autolavado-entenza.jpg" alt="Lavado Interior Image" class="modal-img">
+                </div>
+                <div class="modal-text">
+                    <h2>Lavado Interior</h2>
+                    <p class="modal-description">El lavado de interior de un auto implica limpiar y acondicionar
+                      todas las superficies y componentes dentro del vehículo. Esto puede incluir: <br> <br>
+
+                      Aspirado: Remoción de polvo, suciedad y residuos del suelo, alfombras, asientos y áreas de difícil acceso. <br>
+
+                      Limpieza de Asientos: <br>
+                      Tela: Aspirado y, si es necesario, limpieza con productos específicos para tela. <br>
+
+                      Cuero: Limpieza con productos especiales para cuero y acondicionamiento para mantener la
+                      flexibilidad y evitar grietas. <br>
+
+                      Limpieza de Paneles y Superficies: <br>
+
+                      Limpieza de paneles de puertas, tablero, consola central y cualquier otra superficie de plástico,
+                      vinilo o cuero. <br>
+
+                      Limpieza de Ventanas: <br> 
+
+                      Limpieza de las ventanas interiores para remover manchas, huellas dactilares y polvo. <br>
+
+                      Limpieza de Detalles: <br>
+
+                      Volante, palanca de cambios, manijas de puertas, controles y botones. <br>
+
+                      Uso de cepillos pequeños para limpiar en rendijas y espacios pequeños. <br>
+
+                      Desodorización: Aplicación de desodorizantes para eliminar malos olores y dejar una fragancia
+                      fresca.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="LavasoEx-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-img-container">
+              <img src="img/como-lavar-el-coche-a-mano-en-casa-1280x720x80xX.jpg" alt="Lavado Exterior Image" class="modal-img">
+            </div>
+            <div class="modal-text">
+              <h2>Lavado Exterior</h2>
+              <p class="modal-description">El lavado de exterior de un auto se centra en limpiar y proteger la carrocería
+                y las superficies exteriores. Incluye: <br>  <br>
+
+                Prelavado: Rociado de agua para remover la suciedad suelta y los residuos grandes. <br>
+
+                Jabonado: Aplicación de un detergente específico para autos con una esponja suave o guante de lavado,
+                asegurándose de cubrir toda la superficie del vehículo. <br>
+
+                Limpieza de Ruedas y Neumáticos: Uso de productos específicos para eliminar la suciedad, el polvo de
+                frenos y los contaminantes de las ruedas y neumáticos. <br>
+
+                Enjuague: Remoción del jabón y la suciedad con agua, asegurándose de que no queden residuos. <br>
+
+                Secado: Uso de toallas de microfibra para secar la carrocería y evitar manchas de agua. <br>
+
+                Pulido y Encera (opcional): Aplicación de cera o sellador para proteger la pintura y darle un brillo
+                adicional. <br>
+
+                Limpieza de Vidrios: Limpieza de todas las ventanas exteriores con productos específicos para obtener
+                un acabado sin rayas.</p>
+            </div>
+          </div>
+        </div>
+        <div id="LavadoMot-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-img-container">
+              <img src="img/23-como-limpiar-el-motor-del-coche-sin-dañarlo.jpg" alt="Lavado de Motor Image" class="modal-img">
+            </div>
+            <div class="modal-text">
+              <h2>Lavado de Motor</h2>
+              <p class="modal-description">El lavado del motor de un auto requiere un enfoque cuidadoso para evitar dañar
+                componentes sensibles. Incluye: <br> <br>
+
+                Preparación: Desconectar la batería o cubrir las conexiones eléctricas sensibles. <br>
+
+                Cubrir las tomas de aire y otros componentes críticos para evitar la entrada de agua. <br>
+
+                Prelavado: Rociado de agua para remover la suciedad suelta y el polvo. <br>
+
+                Aplicación de Desengrasante: Uso de un desengrasante específico para motores en todas las superficies sucias
+                y grasosas. <br>
+
+                Cepillado: Cepillado manual de las áreas con mayor acumulación de suciedad y grasa. <br>
+
+                Enjuague: Enjuague con agua a baja presión para evitar dañar componentes delicados. <br>
+
+                Secado: Secado con aire comprimido y toallas de microfibra para asegurarse de que no queden restos de agua. <br>
+
+                Revisión: Verificación de que todos los componentes estén secos y en su lugar antes de volver a conectar la
+                batería y otras conexiones eléctricas.</p>
+            </div>
+          </div>
+        </div>
+        <div id="Almorol-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-img-container">
+              <img src="img/Producto1.jpg.avif" alt="Almorol Image" class="modal-img">
+            </div>
+            <div class="modal-text">
+              <h2>Almorol</h2>
+              <p class="modal-description">El "Almorol" es un producto utilizado para limpiar y acondicionar diferentes superficies, especialmente en el contexto automotriz.</p>
+              <p>Limpieza profunda: Suele ser efectivo para eliminar suciedad, grasa y otros residuos acumulados en superficies interiores y exteriores de automóviles, como vinilo, plástico, gomas y partes de cuero sintético.</p>
+              <p>Acondicionamiento: Además de limpiar, el Almorol a menudo contiene agentes acondicionadores que ayudan a mantener las superficies limpias y a protegerlas del deterioro debido a la exposición al sol, el polvo y otros elementos.</p>
+              <p>Aspecto estético: Al aplicar Almorol, las superficies tratadas suelen lucir más brillantes y con un aspecto renovado, lo que mejora la apariencia general del vehículo.</p>
+              <p>En resumen, el Almorol es un producto versátil que limpia, acondiciona y embellece las superficies del automóvil, proporcionando una limpieza profunda y una protección adicional. Sin embargo, es importante seguir las instrucciones del fabricante para su uso adecuado y evitar daños en las superficies tratadas.</p>
+            </div>
+          </div>
+        </div>
+        <div id="kitli-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-img-container">
+              <img src="img/Producto2.jpg" alt="Kit Limpieza Image" class="modal-img">
+            </div>
+            <div class="modal-text">
+              <h2>Kit Limpieza</h2>
+              <p class="modal-description">Conjunto de productos diseñados para limpiar y mantener la apariencia de un automóvil tanto por dentro como por fuera.</p>
+              <p>Champú para autos: Un detergente especializado para lavar la carrocería del automóvil, eliminando la suciedad y los residuos sin dañar la pintura.</p>
+              <p>Cepillos y esponjas: Herramientas para fregar y limpiar áreas difíciles de alcanzar, como rines, llantas y partes exteriores e interiores del vehículo.</p>
+              <p>Acondicionador de vinilo y plástico: Productos que limpian y protegen superficies de vinilo y plástico, como el tablero, paneles de puertas y consolas centrales.</p>
+              <p>Limpiadores de vidrio: Productos diseñados para limpiar ventanas y espejos, eliminando manchas y residuos sin dejar marcas.</p>
+              <p>Toallas de microfibra: Toallas suaves y absorbentes ideales para secar el automóvil después del lavado y para aplicar productos de limpieza sin rayar las superficies.</p>
+              <p>Acondicionador de cuero: Si el automóvil tiene asientos de cuero, el kit podría incluir un acondicionador específico para mantener el cuero suave y protegido.</p>
+              <p>Desodorizantes y ambientadores: Productos que ayudan a eliminar olores desagradables del interior del automóvil y a mantener un ambiente fresco.</p>
+              <p>Cera o sellador: Productos que protegen la pintura del automóvil y proporcionan un brillo adicional, además de ayudar a repeler el agua y la suciedad.</p>
+              <p>Aspiradora portátil: Algunos kits pueden incluir una aspiradora pequeña para limpiar el interior del automóvil, como alfombras, asientos y áreas de carga.</p>
+            </div>
+          </div>
+        </div>
+        <div id="Shampoo" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-img-container">
+              <img src="img/Producto3.jpeg.webp" alt="Shampoo con Esponja Image" class="modal-img">
+            </div>
+            <div class="modal-text">
+              <h2>Shampoo con Esponja</h2>
+              <p class="modal-description">El "Shampoo con Esponja para Auto" es un producto diseñado para facilitar el proceso de lavado del automóvil al combinar el champú con una esponja o aplicador incorporado. Este tipo de producto es conveniente y práctico para los propietarios de vehículos que desean una solución todo en uno para el lavado de sus autos.</p>
+              <p>Facilidad de uso: Al integrar la esponja en la botella de champú, se simplifica el proceso de lavado, ya que no es necesario buscar y usar una esponja separada.</p>
+              <p>Ahorro de tiempo: Al tener la esponja incorporada, se reduce el tiempo y el esfuerzo requerido para aplicar el champú sobre la carrocería del automóvil.</p>
+              <p>Mayor cobertura: La esponja suele tener una forma diseñada para cubrir áreas grandes de la superficie del automóvil, lo que facilita la distribución uniforme del champú.</p>
+              <p>Limpieza efectiva: El champú formulado específicamente para automóviles está diseñado para eliminar la suciedad, la grasa y otros residuos sin dañar la pintura ni las superficies del vehículo.</p>
+              <p>Protección y brillo: Algunos productos de este tipo también pueden incluir ingredientes que protegen la pintura y proporcionan un brillo adicional después del lavado.</p>
+              <p>Compatibilidad con diferentes superficies: La esponja suele ser suave y no abrasiva, lo que la hace segura para su uso en pintura, vidrio y otras superficies del automóvil.</p>
+              <p>Conveniencia de almacenamiento: Al ser un producto todo en uno, el shampoo con esponja es fácil de almacenar y transportar, ideal para llevarlo en el maletero del automóvil o para usar en lavados rápidos.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div id="Franela" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-img-container">
+              <img src="img/Producto4.jpeg.webp" alt="Franela Image" class="modal-img">
+            </div>
+            <div class="modal-text">
+              <h2>Franela</h2>
+              <p class="modal-description">Paño o tela suave y absorbente diseñada específicamente para limpiar y pulir la superficie de un automóvil. Estas franelas suelen estar hechas de materiales como microfibra u otros tejidos suaves que no rayan ni dañan la pintura del vehículo.</p>
+              <p>Suavidad: Las franelas para auto son muy suaves al tacto, lo que las hace ideales para limpiar y pulir la pintura sin dejar rayones ni marcas.</p>
+              <p>Absorbencia: Son altamente absorbentes, lo que permite recoger y retener eficientemente agua, jabón u otros productos de limpieza sin goteos ni residuos.</p>
+              <p>No abrasivas: A diferencia de algunas toallas o paños comunes, las franelas para auto están diseñadas para ser no abrasivas, evitando así posibles daños en la superficie del automóvil.</p>
+              <p>Versatilidad: Se pueden utilizar para una variedad de tareas de limpieza y mantenimiento, como secar el automóvil después de lavarlo, aplicar cera o sellador, limpiar el interior del vehículo y pulir superficies.</p>
+              <p>Durabilidad: Las franelas de calidad están diseñadas para ser duraderas y resistir múltiples usos y lavados sin perder su efectividad ni deteriorarse.</p>
+              <p>Eliminación de residuos: Al ser muy absorbentes y suaves, las franelas para auto son eficaces para eliminar residuos, polvo, grasa y otros contaminantes de la superficie del automóvil.</p>
+              <p>Brillo y acabado: Al usar una franela para pulir, se puede lograr un brillo y acabado uniforme en la pintura del automóvil, dejándola con un aspecto limpio y reluciente.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div id="Esponja-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-img-container">
+              <img src="img/Producto5.jpeg.webp" alt="Esponja Para Limpieza Image" class="modal-img">
+            </div>
+            <div class="modal-text">
+              <h2>Esponja Para Limpieza</h2>
+              <p class="modal-description">Utensilio diseñado específicamente para facilitar el proceso de lavado de un vehículo. Están fabricadas con materiales suaves que no dañan la pintura ni las superficies del automóvil.</p>
+              <p>Textura suave: Las esponjas para autos están hechas de materiales suaves y no abrasivos, como la espuma de poliuretano o materiales similares, que no rayan la pintura del vehículo.</p>
+              <p>Absorción de agua y jabón: Son capaces de retener agua y productos de limpieza, lo que facilita la distribución uniforme sobre la superficie del automóvil.</p>
+              <p>Limpieza eficiente: Las esponjas están diseñadas para eliminar suciedad, polvo, insectos y otros contaminantes de la carrocería del automóvil de manera efectiva.</p>
+              <p>Versatilidad: Se pueden utilizar con diferentes tipos de champús para automóviles, limpiadores de superficies y productos específicos para el cuidado del exterior del vehículo.</p>
+              <p>Manejo cómodo: La forma y el tamaño de las esponjas para autos están diseñados para adaptarse fácilmente a la mano del usuario, lo que facilita su manipulación durante el lavado.</p>
+              <p>Durabilidad: Las esponjas de calidad son duraderas y pueden resistir varios usos sin desgastarse rápidamente.</p>
+              <p>Seguridad para la pintura: Al ser suaves y no abrasivas, las esponjas para autos protegen la pintura del automóvil al tiempo que eliminan la suciedad y los residuos.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div id="car-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-img-container">
+              <img src="img/Producto6.jpeg.webp" alt="Car Magic Foam Cleaner Image" class="modal-img">
+            </div>
+            <div class="modal-text">
+              <h2>CAR MAGIC FOAM CLEANER</h2>
+              <p class="modal-description">Producto de limpieza diseñado específicamente para automóviles. Suele presentarse en forma de espuma o aerosol y se utiliza para limpiar eficazmente diversas superficies del vehículo, como la carrocería, las llantas, las ventanas y el interior.</p>
+              <p>Acción espumosa: La espuma proporcionada por este limpiador ayuda a aflojar la suciedad, el polvo, los insectos y otros contaminantes adheridos a la superficie del automóvil.</p>
+              <p>Limpieza profunda: Está formulado para proporcionar una limpieza profunda sin dañar la pintura, las molduras u otras partes exteriores del vehículo.</p>
+              <p>Eliminación de manchas difíciles: Puede ser efectivo para eliminar manchas de grasa, aceite, residuos de insectos, marcas de agua y otros tipos de suciedad difícil de limpiar.</p>
+              <p>Seguridad para la pintura: Suele estar diseñado para ser seguro para la pintura del automóvil, evitando arañazos o daños.</p>
+              <p>Fácil de usar: Por lo general, se aplica rociando la espuma sobre la superficie a limpiar, se deja actuar durante unos minutos y luego se enjuaga con agua a presión.</p>
+              <p>Versatilidad: Puede utilizarse en diferentes áreas del automóvil, incluyendo la carrocería, las llantas, los vidrios y el interior para limpiar tapicerías, alfombras y otras superficies.</p>
+              <p>Brillo y acabado: Al limpiar eficazmente la suciedad y los residuos, puede dejar la superficie del automóvil con un aspecto más brillante y renovado.</p>
+            </div>
+          </div>
+        </div>
+        
+        <section class="gallery" id="galeria-productos">
+          <div class="contenedor">
+              <!-- Aquí puede ir el contenido del contenedor si es necesario -->
+          </div>
+          <h2 class="subtitulo">Mision - Visión - Objetivos</h2>
+          <div class="contenedor-galeria" data-aos="zoom-in-up">
+              <div class="item-galeria">
+                  <img src="img/bx-bullseye.svg" alt="Nombre del Producto 1" class="img-galeria image">
+                  <p class="nombre-producto">Mision</p>
+                  <a href="#" class="open-modal" data-modal="Mision-modal">Leer más</a>
+              </div>
+              <div class="item-galeria">
+                  <img src="img/bx-show.svg" alt="Nombre del Producto 4" class="img-galeria image">
+                  <p class="nombre-producto">Visión</p>
+                  <a href="#" class="open-modal" data-modal="Vision-modal">Leer más</a>
+              </div>
+              <div class="item-galeria">
+                  <img src="img/bx-check.svg" alt="Nombre del Producto 5" class="img-galeria image">
+                  <p class="nombre-producto">Objetivos</p>
+                  <a href="#" class="open-modal" data-modal="Objetivos-modal">Leer más</a>
+              </div>
+          </div>
+      </section>
+      
+      <div id="Mision-modal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Mision</h2>
+              <img src="img/bx-bullseye.svg" alt="Car Magic Foam Cleaner Image" class="modal-img">
+              <p>Ofrecer servicios de lavado automotriz de alta calidad que superen las expectativas de nuestros
+              clientes, utilizando tecnologías y productos ecoamigables para mantener la estética y la salud de
+              los vehículos, contribuyendo así a la preservación del medio ambiente.</p>
+          </div>
+      </div>
+      
+      <div id="Vision-modal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Visión</h2>
+              <img src="img/bx-show.svg" alt="Car Magic Foam Cleaner Image" class="modal-img">
+              <p>Ser reconocidos como el autolavado líder en nuestra región, distinguiéndonos por la
+              excelencia en el servicio al cliente, la innovación constante en nuestras técnicas de lavado y
+              el compromiso con la sostenibilidad ambiental.</p>
+          </div>
+      </div>
+      
+      <div id="Objetivos-modal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Objetivos</h2>
+              <img src="img/bx-check.svg" alt="Car Magic Foam Cleaner Image" class="modal-img">
+              <p>Proporcionar un servicio de lavado rápido y eficiente que permita a nuestros clientes optimizar
+              su tiempo y obtener resultados excepcionales. <br> <br>
+              Utilizar productos biodegradables y tecnologías ecoamigables para minimizar nuestro impacto ambiental
+              y promover la sostenibilidad. <br> <br>
+              Capacitar constantemente a nuestro equipo en técnicas de lavado y cuidado automotriz, asegurando la
+              excelencia en cada servicio que ofrecemos. <br> <br>
+              Implementar sistemas de gestión de calidad para garantizar la consistencia y mejora continua de nuestros
+              procesos y resultados. <br> <br>
+              Fomentar la satisfacción del cliente a través de una atención personalizada, escuchando sus necesidades
+              y brindando soluciones adaptadas a cada vehículo. <br> <br>
+              Diversificar nuestros servicios para ofrecer soluciones integrales de mantenimiento automotriz,
+              incluyendo detailing, protección de pintura, pulido y encerado, entre otros. <br> <br>
+              Establecer alianzas estratégicas con proveedores de renombre para garantizar la calidad y confiabilidad
+              de los productos utilizados en nuestro autolavado. <br> <br>
+              Contribuir activamente a la comunidad a través de programas de responsabilidad social empresarial,
+              promoviendo la educación ambiental y la participación en iniciativas de conservación del entorno.</p>
+          </div>
+      </div>
+      
+      <section>
+        <div class="box-info">
+          <h1>CONTACTE CON NOSOTROS</h1>
+          <div class="data">
+            <p><i class="fa-solid fa-phone"></i> +52 55 6235 6969</p>
+            <p><i class="fa-solid fa-envelope"></i> DiamondWash@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Av Rancho Grande 99, Benito Juárez 57000 Nezahualcóyotl,
+              Estado de México, México</p> 
+          </div>
+          <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/profile.php?id=61560550527042">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/cleandrive9?utm_source=qr&igsh=OHR1NmhueHJtY3V5">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        </div>
+        <form>
+          <div class="input-box" data-aos="flip-right">
+            <input type="text" required placeholder="nombre y apellido">
+          </div>
+          <div class="input-box">
+            <input type="email" required placeholder="correo electronico">
+          </div>
+          <div class="input-box">
+            <input type="text" required placeholder="asunto">
+          </div>
+          <div class="input-box">
+            <textarea cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+          </div>
+          <button>Enviar</button>
+        </form>
+      </section>
+
+      <section class="encuentranos" id="encuentranos">
+          <div class="contenedor" data-aos="zoom-in-up">
+            <h2 class="subtitulo">Encuéntranos en:</h2>
+                <div class="cont-encuentranos">
+                    <!-- Mapa de Google -->
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.863582769765!2d-97.1457096842499!3d49.88445157939854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b2bd2d30a84ec3%3A0x4f3d74621c0aa6c8!2sGoogle%20Maps!5e0!3m2!1sen!2sca!4v1633598616037!5m2!1sen!2sca" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="waves" id="Contacto">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/profile.php?id=61560550527042">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://mx.linkedin.com/?src=go-pa&trk=sem-ga_campid.19001150288_asid.143806640876_crid.694479389938_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9140869&mcid=7000592715335761922&cid=&gad_source=1&gclid=EAIaIQobChMI_JSdzZ2-hgMV6gKtBh2WmwjcEAAYASAAEgKJ1vD_BwE&gclsrc=aw.ds">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/cleandrive9?utm_source=qr&igsh=OHR1NmhueHJtY3V5">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#inicio">Inicio</a></li>
+            <li class="menu__item"><a class="menu__link" href="#servicio">Servicio</a></li>
+            <li class="menu__item"><a class="menu__link" href="#galeria">Productos</a></li>
+            <li class="menu__item"><a class="menu__link" href="#encuentranos">Encuéntranos</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contacto">Contacto</a></li>
+        </ul>
+        <p>&copy;2024 equipo de desarrollo </p>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/lighbox.js"></script>
+</body>
+</html>
